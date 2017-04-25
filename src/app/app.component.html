@@ -1,0 +1,25 @@
+<header>
+  <h1><img src="app/img/angular.png" />{{title}}</h1>
+</header>
+<main>
+  <form class="todo-form" (ngSubmit)="createTask()">
+    <input type="text" name="title" [(ngModel)]="newTodoTitle" placeholder="Input Task Name" required>
+    <button type="submit">Add Task</button>
+  </form>
+
+  <section class="todo-list" *ngIf="todos.length">
+    <div class="todo-item" *ngFor="let todo of todos" [class.completed]="todo.completed">
+      <button class="checkbox icon" (click)="taskToggle(todo)">
+        <!-- <i *ngIf="!todo.completed" class="material-icons">check_box_outline_blank</i> -->
+        <!-- <i *ngIf="todo.completed" class="material-icons">check_box</i> -->
+        <i class="material-icons">{{todo.completed?'check_box':'check_box_outline_blank'}}</i>
+      </button>
+      <span class="title">{{todo.title}}</span>
+      <div class="actions">
+        <button class="delete icon" (click)="deleteTask(todo)">
+          <i class="material-icons">delete</i>
+        </button>
+      </div>
+    </div>
+  </section>
+</main>
