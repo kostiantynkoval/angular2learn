@@ -1,0 +1,22 @@
+.todo-item{
+  width: 100%;
+  display: flex;
+}
+.todo-item button{
+  border: none;
+  outline: none;
+  background-color: #fff;
+  padding: 10px 20px;
+}
+.todo-item span{
+  padding: 15px 40px;
+}
+.todo-item .actions{
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+.completed span{
+  color: #888;
+  text-decoration: line-through;
+}

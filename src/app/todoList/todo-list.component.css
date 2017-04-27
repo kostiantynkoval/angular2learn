@@ -1,0 +1,7 @@
+todo-item{
+  margin: 20px auto;
+  width: 400px;
+  border: 1px solid #666;
+  box-shadow: 2px 2px 3px black;
+  display: flex;
+}

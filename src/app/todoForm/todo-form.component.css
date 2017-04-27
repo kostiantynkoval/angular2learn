@@ -1,0 +1,6 @@
+form{
+  text-align: center;
+}
+input.ng-invalid.ng-dirty{
+  outline: red 1px solid;
+}

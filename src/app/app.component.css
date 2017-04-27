@@ -7,34 +7,4 @@ header img{
 .main{
   width: 100%;
 }
-form{
-  text-align: center;
-}
-.todo-item{
-  margin: 20px auto;
-  width: 400px;
-  border: 1px solid #666;
-  box-shadow: 2px 2px 3px black;
-  display: flex;
-}
-.todo-item button{
-  border: none;
-  outline: none;
-  background-color: #fff;
-  padding: 10px 20px;
-}
-.todo-item span{
-  padding: 15px 40px;
-}
-.todo-item .actions{
-  flex: 1;
-  display: flex;
-  justify-content: flex-end;
-}
-.completed span{
-  color: #888;
-  text-decoration: line-through;
-}
-input.ng-invalid.ng-dirty{
-  outline: red 1px solid;
-}
+
